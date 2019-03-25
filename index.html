@@ -47,6 +47,12 @@
         <link href="css/effects/normalize.css" rel="stylesheet" type="text/css">
 
         <link href="css/effects/component.css"  rel="stylesheet" type="text/css" >
+	<script>
+		
+		  $(window).load(function(){
+		    $('.preloader').delay(7000).fadeOut('slow'); // set duration in brackets    
+		  });
+	 </script>
 
 	</head>
 
@@ -54,7 +60,15 @@
 
     <body>
 
-    
+    <center><div class="preloader" width="100%" ><img src="load.gif"></div></center>
+
+<script>
+	setTimeout(function() {
+    $('#preloader').fadeOut('fast');
+}, 1000);
+	
+  
+</script>
 
     	<!-- header -->
 
